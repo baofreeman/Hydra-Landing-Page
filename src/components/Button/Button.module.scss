@@ -1,0 +1,41 @@
+@import "../../styles/variable";
+
+.btn-primary {
+  background-image: linear-gradient(to right, #8176af, #c0b7e8);
+  color: $color-black;
+  border: 2px solid $color-white;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.btn-basic {
+  background-color: transparent;
+  color: $color-white;
+  border: 2px solid $color-white;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.btn-small {
+  padding: 1px 2px;
+  width: 94px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-medium {
+  padding: 1px 2px;
+  width: 154px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-large {
+  padding: 1px 2px;
+  width: 214px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+}
