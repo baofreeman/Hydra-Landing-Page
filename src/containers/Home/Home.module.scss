@@ -1,0 +1,136 @@
+@import "../../styles/variable";
+@import "../../styles/mixin";
+
+.home__container {
+  display: flex;
+  height: 100%;
+  margin: 12rem 6rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 6rem;
+
+  @include respond(phone) {
+    margin: 6rem 2rem;
+  }
+
+  .home__info {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    .home__info-content {
+      display: flex;
+      flex: 0 0 50%;
+      gap: 3rem;
+      padding-right: 16rem;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      @include respond(tab-land) {
+        padding-right: 6rem;
+      }
+      @include respond(phone) {
+        display: none;
+      }
+      h1 {
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: $color-black;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      .home__info-btn {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+      }
+    }
+    .home__info-img {
+      flex: 0 0 50%;
+      @include respond(phone) {
+        flex: 0 0 100%;
+      }
+      .home__info-img--custom {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+
+        img {
+          width: 100%;
+          border: 15px solid rgba(0, 0, 0, 0.2);
+          border-top-right-radius: 58px;
+          border-top-left-radius: 58px;
+          border-bottom-left-radius: 218px;
+          border-bottom-right-radius: 58px;
+        }
+      }
+    }
+  }
+  .home__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: $color-gardient;
+    border-radius: 999px;
+    @include respond(phone) {
+      width: 100%;
+      flex-direction: column;
+      border-radius: none;
+      gap: 3rem;
+      background-image: none;
+    }
+    .home__contact-heading {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      flex: 1;
+      padding: 3rem 4rem;
+
+      @include respond(tab-land) {
+        width: 320px;
+        padding: 2rem 2rem;
+      }
+      @include respond(tab-port) {
+        width: 180px;
+        padding: 1rem 2rem;
+      }
+      @include respond(phone) {
+        width: 100%;
+        gap: 4rem;
+        flex: 1;
+        background-image: $color-gardient;
+        border-radius: 999px;
+      }
+      .home__contact-visit-des {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        h1 {
+          font-size: 2rem;
+          font-weight: 600;
+          color: $color-white;
+          @include respond(tab-land) {
+            font-size: 1.6rem;
+          }
+          p {
+            font-size: 1.2rem;
+            color: $color-white;
+            font-size: 400;
+            @include respond(tab-land) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

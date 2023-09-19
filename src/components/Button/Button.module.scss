@@ -1,7 +1,7 @@
 @import "../../styles/variable";
 
 .btn-primary {
-  background-image: linear-gradient(to right, #8176af, #c0b7e8);
+  background-image: $color-gardient;
   color: $color-black;
   border: 2px solid $color-white;
   border-radius: 999px;

@@ -4,7 +4,7 @@ import { About, Home } from "./containers";
 
 function App() {
   return (
-    <div className="App">
+    <div className="Wrapper">
       <Router>
         <Navbar />
         <Routes>
