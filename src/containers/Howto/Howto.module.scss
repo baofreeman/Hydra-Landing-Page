@@ -1,0 +1,142 @@
+@import "../../styles/mixin";
+@import "../../styles/variable";
+
+.howto__wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  .howto__intro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .howto__intro-heading {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 50%;
+      @include respond(phone) {
+        flex: 0 0 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      h1,
+      p {
+        font-size: 2.4rem;
+        color: $color-white;
+      }
+      h1 {
+        font-weight: 600;
+      }
+      .howto__intro-heading-des {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        svg {
+          font-size: 3rem;
+        }
+        @include respond(phone) {
+          display: none;
+        }
+      }
+    }
+    .howto__intro-des {
+      flex: 0 0 50%;
+      @include respond(phone) {
+        display: none;
+      }
+      p {
+        font-size: 1.6rem;
+        color: $color-white;
+      }
+    }
+  }
+
+  .howto__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0;
+    @include respond(big-desktop) {
+    }
+
+    @include respond(desktop) {
+    }
+
+    @include respond(tab-land) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .howto__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      @include respond(big-desktop) {
+        flex: 0 0 25%;
+      }
+
+      @include respond(desktop) {
+        flex: 0 0 25%;
+      }
+
+      @include respond(tab-land) {
+        flex: 0 0 25%;
+      }
+
+      @include respond(tab-port) {
+        flex: 0 0 50%;
+      }
+
+      @include respond(phone) {
+        flex: 0 0 100%;
+      }
+      .howto__rounded {
+        display: flex;
+        width: 150px;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        background: $color-gardient;
+        background-clip: content-box;
+        border-radius: 999px;
+        border: 15px solid rgba(0, 0, 0, 0.2);
+        h1 {
+          font-size: 4.8rem;
+          font-weight: 600;
+        }
+      }
+      .howto__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 1rem;
+        svg {
+          font-size: 2.8rem;
+          color: $color-white;
+        }
+        h1 {
+          margin-left: 2rem;
+          font-size: 2.8rem;
+          font-weight: 600;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

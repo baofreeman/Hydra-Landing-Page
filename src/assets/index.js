@@ -1,3 +1,13 @@
 export { default as logo } from "./img/logo.png";
 export { default as hydra } from "./img/hydra.png";
 export { default as vg } from "./img/vg.png";
+export { default as vr } from "./img/vr-man.png";
+export { default as vr1 } from "./img/vr-1.png";
+export { default as vr2 } from "./img/vr-2.png";
+export { default as vr3 } from "./img/vr-3.png";
+export { default as vr4 } from "./img/vr-4.png";
+export { default as vrBanner } from "./img/vr-banner.png";
+export { default as vrPartner1 } from "./img/Hydra-Tech1 1.png";
+export { default as vrPartner2 } from "./img/Hydra-Tech2 1.png";
+export { default as vrPartner3 } from "./img/Hydra-Tech3 1.png";
+export { default as vrPartner4 } from "./img/Hydra-Tech4 1.png";

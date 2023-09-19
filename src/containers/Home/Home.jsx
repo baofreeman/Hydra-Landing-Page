@@ -3,6 +3,7 @@ import classNames from "classnames/bind";
 import { Button } from "../../components";
 import { GrLinkNext } from "react-icons/gr";
 import { BiPhoneCall, BiMap, BiMailSend } from "react-icons/bi";
+import { About, Howto, Services } from "../index";
 import styles from "./Home.module.scss";
 import { vg } from "../../assets";
 
@@ -24,7 +25,7 @@ const Home = () => {
               Build your world
             </Button>
             <div>
-              <GrLinkNext color="#fff" size={29} />
+              <GrLinkNext size={29} />
             </div>
           </div>
         </div>
@@ -59,6 +60,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <About />
+      <Services />
+      <Howto />
     </div>
   );
 };

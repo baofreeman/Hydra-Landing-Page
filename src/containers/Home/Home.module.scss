@@ -37,16 +37,20 @@
       h1 {
         font-size: 3.6rem;
         font-weight: 600;
-        color: $color-black;
+        color: $color-white;
       }
       p {
         font-size: 1.6rem;
         font-weight: 400;
+        color: $color-white;
       }
       .home__info-btn {
         display: flex;
         align-items: center;
         gap: 3rem;
+        svg {
+          color: $color-white;
+        }
       }
     }
     .home__info-img {

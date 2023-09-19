@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
-  background-color: black;
   width: 100%;
   position: relative;
 
@@ -46,7 +45,7 @@
       display: none;
     }
     a {
-      font-size: 1rem;
+      font-size: 1.6rem;
       font-weight: 600;
       text-transform: uppercase;
       padding: 0.5rem 1rem;
@@ -58,7 +57,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
-    @include respond(tab-port) {
+    @include respond(phone) {
       display: none;
     }
   }

@@ -1,0 +1,128 @@
+@import "../../styles/variable";
+@import "../../styles/mixin";
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  .about__intro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .about__intro-heading {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 50%;
+      @include respond(phone) {
+        flex: 0 0 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      h1,
+      p {
+        font-size: 2.4rem;
+        color: $color-white;
+      }
+      h1 {
+        font-weight: 600;
+      }
+      .about__intro-heading-des {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        svg {
+          font-size: 3rem;
+        }
+      }
+    }
+    .about__intro-des {
+      flex: 0 0 50%;
+      @include respond(phone) {
+        display: none;
+      }
+      p {
+        font-size: 1.6rem;
+        color: $color-white;
+      }
+    }
+  }
+  .about__content {
+    display: flex;
+    flex-direction: row;
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .about__content-img {
+      width: 100%;
+      flex: 0 0 50%;
+      @include respond(phone) {
+        width: 100%;
+        flex: 0 0 100%;
+      }
+      img {
+        width: 80%;
+        border-top-right-radius: 48px;
+        border-top-left-radius: 218px;
+        border-bottom-left-radius: 48px;
+        border-bottom-right-radius: 218px;
+        @include respond(tab-land) {
+          border-top-left-radius: 158px;
+          border-bottom-right-radius: 158px;
+        }
+        @include respond(tab-port) {
+          border-top-left-radius: 118px;
+          border-bottom-right-radius: 118px;
+        }
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
+    }
+    .about__content-vr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      @include respond(phone) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      }
+      h1,
+      h2 {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: $color-white;
+        @include respond(phone) {
+          display: none;
+        }
+      }
+      h2 {
+        font-weight: 400;
+      }
+      p {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        font-size: 400;
+        color: $color-white;
+        @include respond(phone) {
+          margin-top: 3rem;
+        }
+      }
+      .about__content-vr-btn {
+        width: 214px;
+        display: flex;
+        justify-content: stretch;
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
