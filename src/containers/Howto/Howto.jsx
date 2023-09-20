@@ -42,7 +42,7 @@ function Howto() {
           </div>
           <div className={cx("howto__content")}>
             <GrLinkNext />
-            <h1>3D Conception & Design</h1>
+            <h1>Interaction Design</h1>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ function Howto() {
           </div>
           <div className={cx("howto__content")}>
             <GrLinkNext />
-            <h1>3D Conception & Design</h1>
+            <h1>VR World User Testing</h1>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ function Howto() {
           </div>
           <div className={cx("howto__content")}>
             <GrLinkNext />
-            <h1>3D Conception & Design</h1>
+            <h1>Hydra VR Deploy</h1>
           </div>
         </div>
       </div>

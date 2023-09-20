@@ -32,10 +32,10 @@ const Navbar = () => {
         <Menu />
       </nav>
       <div className={cx("navbar__btn")}>
-        <Button basic={true} medium={true}>
+        <Button basic={true} small={true}>
           Contact us
         </Button>
-        <Button primary={true} medium={true}>
+        <Button primary={true} small={true}>
           Test2
         </Button>
       </div>

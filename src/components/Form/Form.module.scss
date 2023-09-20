@@ -1,0 +1,60 @@
+@import "../../styles/variable";
+@import "../../styles/mixin";
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  background: rgb(67, 61, 96);
+  background: radial-gradient(circle, rgb(67, 61, 96) 3%, rgb(33, 30, 46) 100%);
+  border-radius: 25px;
+  .form__des {
+    text-align: center;
+    h1,
+    h2 {
+      font-size: 2.8rem;
+      color: $color-white;
+      font-weight: 600;
+    }
+
+    h2 {
+      margin-top: 1rem;
+      font-weight: 400;
+    }
+  }
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 60%;
+    gap: 2rem;
+    @include respond(phone) {
+      min-width: 90%;
+    }
+    .form__container-block {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+      @include respond(phone) {
+        flex-direction: column;
+      }
+    }
+    input {
+      padding: 1.5rem 2rem;
+      border-radius: 999px;
+      background-color: transparent;
+      border: 1px solid $color-white;
+      width: 100%;
+
+      &:focus {
+        border: 1px solid $color-black;
+      }
+    }
+  }
+}

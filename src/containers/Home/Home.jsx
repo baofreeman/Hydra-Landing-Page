@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames/bind";
-import { Button } from "../../components";
+import { Button, Form } from "../../components";
 import { GrLinkNext } from "react-icons/gr";
 import { BiPhoneCall, BiMap, BiMailSend } from "react-icons/bi";
 import { About, Howto, Services } from "../index";
@@ -63,6 +63,7 @@ const Home = () => {
       <About />
       <Services />
       <Howto />
+      <Form />
     </div>
   );
 };
