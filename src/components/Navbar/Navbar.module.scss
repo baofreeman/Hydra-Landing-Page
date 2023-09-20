@@ -6,7 +6,9 @@
   align-items: center;
   padding: 2rem 4rem;
   width: 100%;
-  position: relative;
+  top: 0;
+  z-index: 10;
+  position: fixed;
 
   @include respond(phone) {
     height: 80px;
@@ -18,7 +20,13 @@
     gap: 1rem;
 
     .navbar__img-logo {
-      width: 100%;
+      width: 80%;
+      @include respond(desktop) {
+        width: 40%;
+      }
+      @include respond(tab-land) {
+        width: 30%;
+      }
       @include respond(tab-port) {
         width: 30%;
       }
@@ -28,6 +36,12 @@
     }
     .navbar__img-hydra {
       width: 100%;
+      @include respond(desktop) {
+        width: 40%;
+      }
+      @include respond(tab-land) {
+        width: 30%;
+      }
       @include respond(tab-port) {
         width: 30%;
       }
@@ -46,7 +60,7 @@
       display: none;
     }
     a {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       font-weight: 600;
       text-transform: uppercase;
       padding: 0.5rem 1rem;
@@ -61,6 +75,15 @@
 
     @include respond(phone) {
       display: none;
+    }
+    .navbar__btn-block {
+      display: flex;
+      justify-content: stretch;
+      align-items: stretch;
+      min-width: 120px;
+      @include respond(big-desktop) {
+        min-width: 200px;
+      }
     }
   }
   .navbar__menu {
@@ -96,4 +119,8 @@
       }
     }
   }
+}
+
+.navbar--active {
+  background: $color-gardient;
 }

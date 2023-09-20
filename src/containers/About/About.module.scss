@@ -79,6 +79,8 @@
           border-bottom-right-radius: 118px;
         }
         @include respond(phone) {
+          border-top-left-radius: 128px;
+          border-bottom-right-radius: 128px;
           width: 100%;
         }
       }

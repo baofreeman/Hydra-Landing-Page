@@ -23,7 +23,7 @@ const Form = () => {
         </div>
         <input name="subject" placeholder="Subject" />
         <input name="tell" placeholder="Tell something" />
-        <Button primary={true} medium={true} type="submit">
+        <Button primary={true} square={true} type="submit">
           SEND TO HYDRA
         </Button>
       </form>

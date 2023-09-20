@@ -1,4 +1,5 @@
 @import "../../styles/variable";
+@import "../../styles/mixin";
 
 .btn-primary {
   background-image: $color-gardient;
@@ -6,6 +7,7 @@
   border: 2px solid $color-white;
   border-radius: 999px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn-basic {
@@ -14,28 +16,25 @@
   border: 2px solid $color-white;
   border-radius: 999px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.btn-small {
-  padding: 1px 2px;
-  width: 94px;
-  height: 48px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.btn-medium {
-  padding: 1px 2px;
-  width: 154px;
-  height: 48px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.btn-large {
+.btn-square {
   padding: 1px 2px;
   width: 100%;
   height: 48px;
   font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-rounded {
+  padding: 1px 2px;
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  font-size: 1.6rem;
   font-weight: 600;
 }

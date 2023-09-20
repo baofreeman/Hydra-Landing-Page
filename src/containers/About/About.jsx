@@ -4,12 +4,11 @@ import styles from "./About.module.scss";
 import { GrFormNext } from "react-icons/gr";
 import { Button } from "../../components";
 import { vr } from "../../assets";
-
 const cx = classNames.bind(styles);
 
 function About() {
   return (
-    <div className={cx("about__wrapper")}>
+    <div className={cx("about__wrapper")} id="about">
       <div className={cx("about__intro")}>
         <div className={cx("about__intro-heading")}>
           <h1>INTRODUCTION</h1>
@@ -41,7 +40,7 @@ function About() {
             minima modi quas!
           </p>
           <div className={cx("about__content-vr-btn")}>
-            <Button primary={true} large={true}>
+            <Button primary={true} square={true}>
               LETS' GET IN TOUCH
             </Button>
           </div>

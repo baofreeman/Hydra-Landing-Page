@@ -8,9 +8,8 @@ const Button = ({
   className,
   basic,
   primary,
-  small,
-  medium,
-  large,
+  square,
+  rounded,
   ...props
 }) => {
   const btnStyle = classNames(
@@ -19,9 +18,8 @@ const Button = ({
   );
 
   const btnSize = classNames(
-    { "btn-small": small },
-    { "btn-medium": medium },
-    { "btn-large": large }
+    { "btn-square": square },
+    { "btn-rounded": rounded }
   );
   return (
     <button className={cx(btnStyle, btnSize)} {...props}>

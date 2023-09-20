@@ -21,7 +21,7 @@ const Home = () => {
             error, est esse corrupti earum.
           </p>
           <div className={cx("home__info-btn")}>
-            <Button large={true} primary={true}>
+            <Button square={true} primary={true}>
               Build your world
             </Button>
             <div>

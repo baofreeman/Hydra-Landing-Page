@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames/bind";
 import styles from "./Services.module.scss";
 import { GrFormNext, GrPrevious, GrNext } from "react-icons/gr";
-import { Button } from "../../components";
+import { Button, SwiperCustom } from "../../components";
 import {
   vr1,
   vr2,
@@ -15,20 +15,13 @@ import {
   vrPartner4,
 } from "../../assets";
 import { BsChevronDown } from "react-icons/bs";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import { SwiperSlide } from "swiper/react";
 
 const cx = classNames.bind(styles);
 const Services = () => {
   return (
-    <div className={cx("services__wrapper")}>
+    <div className={cx("services__wrapper")} id="services">
       <div className={cx("services__intro")}>
         <div className={cx("services__intro-heading")}>
           <h1>WHY BUILD</h1>
@@ -48,19 +41,7 @@ const Services = () => {
       </div>
 
       <div className={cx("services__items")}>
-        <Swiper
-          modules={[Navigation, A11y]}
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-          breakpoints={{
-            768: {
-              slidesPerView: 4,
-            },
-          }}
-        >
+        <SwiperCustom>
           <SwiperSlide>
             <div className={cx("services__item")}>
               <div className={cx("services__item-img")}>
@@ -73,9 +54,11 @@ const Services = () => {
                 similique expedita odio numquam tempore sit et fuga molestiae.
                 Vero, sint quod.
               </p>
-              <Button primary={true} medium={true}>
-                Button
-              </Button>
+              <div className={cx("services__item-btn")}>
+                <Button primary={true} square={true}>
+                  Button
+                </Button>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -83,16 +66,18 @@ const Services = () => {
               <div className={cx("services__item-img")}>
                 <img src={vr2} />
               </div>
-              <h1>EDUCATION</h1>
+              <h1>SIMULATION</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Veritatis, quasi iste rem quos doloribus ipsam nesciunt in, eos
                 similique expedita odio numquam tempore sit et fuga molestiae.
                 Vero, sint quod.
               </p>
-              <Button primary={true} medium={true}>
-                Button
-              </Button>
+              <div className={cx("services__item-btn")}>
+                <Button primary={true} square={true}>
+                  Button
+                </Button>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -100,16 +85,18 @@ const Services = () => {
               <div className={cx("services__item-img")}>
                 <img src={vr3} />
               </div>
-              <h1>SELF-CARE</h1>
+              <h1>SIMULATION</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Veritatis, quasi iste rem quos doloribus ipsam nesciunt in, eos
                 similique expedita odio numquam tempore sit et fuga molestiae.
                 Vero, sint quod.
               </p>
-              <Button primary={true} medium={true}>
-                Button
-              </Button>
+              <div className={cx("services__item-btn")}>
+                <Button primary={true} square={true}>
+                  Button
+                </Button>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -117,19 +104,21 @@ const Services = () => {
               <div className={cx("services__item-img")}>
                 <img src={vr4} />
               </div>
-              <h1>OUTDOOR</h1>
+              <h1>SIMULATION</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Veritatis, quasi iste rem quos doloribus ipsam nesciunt in, eos
                 similique expedita odio numquam tempore sit et fuga molestiae.
                 Vero, sint quod.
               </p>
-              <Button primary={true} medium={true}>
-                Button
-              </Button>
+              <div className={cx("services__item-btn")}>
+                <Button primary={true} square={true}>
+                  Button
+                </Button>
+              </div>
             </div>
           </SwiperSlide>
-        </Swiper>
+        </SwiperCustom>
       </div>
 
       <div className={cx("services__partner")}>
@@ -139,27 +128,14 @@ const Services = () => {
             <p>USED BY HYDRA VR</p>
           </div>
           <div className={cx("services__partner-btn")}>
-            <Button primary={true} small={true}>
+            <Button primary={true} rounded={true}>
               <BsChevronDown />
             </Button>
           </div>
         </div>
 
         <div className={cx("services__partner-items")}>
-          <Swiper
-            // install Swiper modules
-            modules={[Navigation, A11y]}
-            spaceBetween={50}
-            slidesPerView={1}
-            navigation
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-            breakpoints={{
-              768: {
-                slidesPerView: 4,
-              },
-            }}
-          >
+          <SwiperCustom>
             <SwiperSlide>
               <div className={cx("services__partner-item")}>
                 <img src={vrPartner1} />
@@ -180,7 +156,7 @@ const Services = () => {
                 <img src={vrPartner4} />
               </div>
             </SwiperSlide>
-          </Swiper>
+          </SwiperCustom>
         </div>
       </div>
     </div>
